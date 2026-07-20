@@ -4,15 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm spending 100 days building up my Python skills in public — starting from the fundamentals and working toward real, working AI-powered applications.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+The plan runs in phases: solidifying core Python and tooling, moving into data wrangling and automation, building small web apps and APIs, picking up the basics of working with LLMs, and finishing with a handful of capstone AI projects built end to end and deployed.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Each post is a short, honest log of what I set out to build, what actually happened, and what clicked (or didn't). The code for standalone projects lives alongside the posts, so this blog doubles as a running portfolio of the work.
 
-
-[jekyll-organization]: https://github.com/jekyll
+If you're on a similar path, I hope some of this is useful. Feel free to follow along.
