@@ -1,8 +1,7 @@
 ---
-layout: single
+layout: page
 title: About
 permalink: /about/
-author_profile: true
 ---
 
 I'm spending 100 days building up my Python skills in public — starting from the fundamentals and working toward real, working AI-powered applications.

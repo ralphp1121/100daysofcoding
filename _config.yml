@@ -18,8 +18,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-minimal_mistakes_skin: "dark"
-
 title: 100 Days of Coding Python
 name: "Ralph"
 email: ralph@lplazo.com
@@ -32,28 +30,20 @@ url: "https://ralphp1121.github.io" # the base hostname & protocol for your site
 repository: "ralphp1121/100daysofcoding"
 
 # Build settings
-theme: minimal-mistakes-jekyll
+theme: jekyll-theme-simplex
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-include-cache
 
-author:
-  name: "Ralph"
-  bio: "Following a 100-day journey from Python fundamentals to building real AI-powered applications."
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ralphp1121"
+logo_img: /assets/img/icons/simplex_logo.svg
+copyright: "© Ralph 2026"
 
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ralphp1121"
+collections:
+  category:
+    output: true
+  authors:
+    output: false
 
 # Reading Files
 include:
@@ -62,36 +52,25 @@ include:
 # Outputting
 permalink: /:categories/:title/
 
-# Pagination
-paginate: 10
-paginate_path: /page:num/
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
 defaults:
   # _posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments:
-      share: true
-      related: true
+      layout: post
   # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
-      layout: single
-      author_profile: true
+      layout: page
+  # _category
+  - scope:
+      path: ""
+      type: category
+    values:
+      layout: category
 
 # Exclude from processing.
 # The following items will not be processed, by default.
