@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Day 1: Data Types & Input/Output"
 date:   2026-07-20
 categories: [foundations]
