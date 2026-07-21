@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+{% assign goal_days = site.goal_days | default: 100 %}
+{% assign posts_count = site.posts.size %}
+{% assign projects_count = site.data.projects.size | default: 0 %}
+{% assign progress_pct = posts_count | times: 100 | divided_by: goal_days %}
+{% if progress_pct > 100 %}{% assign progress_pct = 100 %}{% endif %}
+
+{% assign first_post = site.posts | sort: 'date' | first %}
+{% assign days_elapsed = 1 %}
+{% if first_post %}
+  {% assign start_ts = first_post.date | date: '%s' %}
+  {% assign now_ts = site.time | date: '%s' %}
+  {% assign diff_seconds = now_ts | minus: start_ts %}
+  {% assign days_elapsed = diff_seconds | divided_by: 86400 | plus: 1 %}
+{% endif %}
+
+<div class="dashboard">
+
+  <div class="dashboard-hero">
+    <h1>{{ site.title }}</h1>
+    {% if site.description %}<p>{{ site.description }}</p>{% endif %}
+  </div>
+
+  <div class="dashboard-progress">
+    <div class="dashboard-progress-labels">
+      <span>Day {{ posts_count }} of {{ goal_days }}</span>
+      <span>{{ progress_pct }}%</span>
+    </div>
+    <div class="dashboard-progress-track">
+      <div class="dashboard-progress-fill" style="width: {{ progress_pct }}%;"></div>
+    </div>
+  </div>
+
+  <div class="dashboard-stats">
+    <div class="dashboard-stat">
+      <p class="dashboard-stat-label">Days elapsed</p>
+      <p class="dashboard-stat-value">{{ days_elapsed }}</p>
+    </div>
+    <div class="dashboard-stat">
+      <p class="dashboard-stat-label">Posts</p>
+      <p class="dashboard-stat-value">{{ posts_count }}</p>
+    </div>
+    <div class="dashboard-stat">
+      <p class="dashboard-stat-label">Projects</p>
+      <p class="dashboard-stat-value">{{ projects_count }}</p>
+    </div>
+  </div>
+
+  <h2 class="dashboard-section-title">Recent posts</h2>
+  {% if site.posts.size > 0 %}
+    <div class="dashboard-cards">
+      {% for post in site.posts limit: 4 %}
+        <a class="dashboard-card" href="{{ post.url | relative_url }}">
+          <p class="dashboard-card-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+          <p class="dashboard-card-title">{{ post.title }}</p>
+          <p class="dashboard-card-excerpt">{{ post.excerpt | strip_html | truncate: 110 }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="dashboard-empty">No posts yet — day 1 is coming soon.</p>
+  {% endif %}
+
+  {% if site.data.projects.size > 0 %}
+    <h2 class="dashboard-section-title">Projects</h2>
+    <div class="dashboard-cards">
+      {% for project in site.data.projects %}
+        <a class="dashboard-card" href="{{ project.url }}" target="_blank" rel="noopener">
+          <p class="dashboard-card-meta">View on GitHub</p>
+          <p class="dashboard-card-title">{{ project.title }}</p>
+          <p class="dashboard-card-excerpt">{{ project.description }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+</div>

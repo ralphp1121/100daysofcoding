@@ -1,0 +1,9 @@
+- title: "Day 1: Data types & I/O"
+  description: "Variables, int/float/str, input()/print(), type conversion, and string concatenation."
+  url: "https://github.com/ralphp1121/100daysofcoding/tree/main/projects/day-1-data-types-io"
+  post_url: "/foundations/day-1-data-types-io/"
+
+- title: "Day 2: Conditionals, booleans & imports"
+  description: "Branching logic, boolean expressions, and the import system."
+  url: "https://github.com/ralphp1121/100daysofcoding/tree/main/projects/day-2-conditionals-booleans-imports"
+  post_url: ""
