@@ -2,8 +2,7 @@
 layout: post
 title:  "Day 1: Data Types & Input/Output"
 date:   2026-07-20
-category: [foundations]
-author: ralph
+categories: [foundations]
 ---
 
 **Today's focus:** Phase 0 of my 100 Days of Code recap — Chapter 1 of *Python Foundations*: variables, `int`/`float`/`str`, `input()`/`print()`, type conversion, string concatenation, and comments. Three challenges, increasing difficulty: a warm-up, an applied script, and a mini-project.

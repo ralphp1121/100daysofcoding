@@ -30,20 +30,11 @@ url: "https://ralphp1121.github.io" # the base hostname & protocol for your site
 repository: "ralphp1121/100daysofcoding"
 
 # Build settings
-theme: jekyll-theme-simplex
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-
-logo_img: /assets/img/icons/simplex_logo.svg
-copyright: "© Ralph 2026"
-
-collections:
-  category:
-    output: true
-  authors:
-    output: false
 
 # Reading Files
 include:
@@ -65,12 +56,6 @@ defaults:
       type: pages
     values:
       layout: page
-  # _category
-  - scope:
-      path: ""
-      type: category
-    values:
-      layout: category
 
 # Exclude from processing.
 # The following items will not be processed, by default.
