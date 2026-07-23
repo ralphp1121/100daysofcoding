@@ -1,9 +1,35 @@
-- title: "Day 1: Data types & I/O"
-  description: "Variables, int/float/str, input()/print(), type conversion, and string concatenation."
-  url: "https://github.com/ralphp1121/100daysofcoding/tree/main/projects/day-1-data-types-io"
-  post_url: "/foundations/day-1-data-types-io/"
+- title: "100daysofcoding"
+  description: "100 days of coding with Python — this blog itself, built with Jekyll."
+  url: "https://github.com/ralphp1121/100daysofcoding"
 
-- title: "Day 2: Conditionals, booleans & imports"
-  description: "Branching logic, boolean expressions, and the import system."
-  url: "https://github.com/ralphp1121/100daysofcoding/tree/main/projects/day-2-conditionals-booleans-imports"
-  post_url: ""
+- title: "js_block_inspector"
+  description: "Chrome browser extension to check blocked JS tag scripts on a loaded web page."
+  url: "https://github.com/ralphp1121/js_block_inspector"
+
+- title: "Vibe-coding-test01"
+  description: "Testing vibe coding."
+  url: "https://github.com/ralphp1121/Vibe-coding-test01"
+
+- title: "localhosted_n8n_cloudflaretunnel"
+  description: "Locally hosting n8n using Docker and Cloudflare Tunnel."
+  url: "https://github.com/ralphp1121/localhosted_n8n_cloudflaretunnel"
+
+- title: "invokeLLMusingOllama"
+  description: "Basic Python code to invoke an LLM using Ollama."
+  url: "https://github.com/ralphp1121/invokeLLMusingOllama"
+
+- title: "ip_csv_extractor_lucene"
+  description: "IP list extractor from a CSV file, formatted into Lucene query syntax."
+  url: "https://github.com/ralphp1121/ip_csv_extractor_lucene"
+
+- title: "AI_statspreviewcardcomponent"
+  description: "Using AI to achieve a targeted web design challenge."
+  url: "https://github.com/ralphp1121/AI_statspreviewcardcomponent"
+
+- title: "AI_qrcodecomponent"
+  description: "Using AI (ChatGPT) to build the Frontend Mentor QR code component challenge."
+  url: "https://github.com/ralphp1121/AI_qrcodecomponent"
+
+- title: "axie_partner_bot"
+  description: "Axie Infinity Discord bot for my scholars."
+  url: "https://github.com/ralphp1121/axie_partner_bot"
