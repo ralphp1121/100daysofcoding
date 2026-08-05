@@ -232,6 +232,76 @@ a:visited {
   color: var(--accent-blue);
 }
 
+.archive {
+  padding: 0.5rem 0 2rem;
+}
+
+.archive-year {
+  margin-bottom: 2rem;
+}
+
+.archive-year-title {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 1rem;
+  padding-bottom: 8px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border);
+}
+
+.archive-month {
+  margin-bottom: 1.25rem;
+}
+
+.archive-month-title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  color: var(--text-muted);
+}
+
+.archive-post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.archive-post-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.archive-post-item:last-child {
+  border-bottom: none;
+}
+
+.archive-post-link {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 10px 4px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+
+.archive-post-link:hover {
+  background-color: var(--bg-tile);
+}
+
+.archive-post-date {
+  flex: 0 0 auto;
+  width: 56px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.archive-post-title {
+  font-size: 15px;
+  color: var(--text-primary) !important;
+}
+
 /** Code snippet readability — minima's default Rouge theme assumes a
   * light page and light-untinted text, which turns near-invisible once
   * the site-wide dark color scheme cascades into un-highlighted tokens.

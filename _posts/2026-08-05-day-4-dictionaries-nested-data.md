@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 4: Dictionaries & Nested Data"
-date:   2026-08-04
+date:   2026-08-05
 categories: [foundations]
 ---
 
